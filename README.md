@@ -6,7 +6,7 @@ Group Member: Isabelle Yip, Rafik Akaba
 
 Project Title: 25/26 LZIFC005L: Computer Science Ecosystems / Coursework: Group Project
 
-Description: This project aims to showcase students' understanding towards the use of coding languages and fundamentals like HTML, CSS, JavaScript, Git, GitHub and Bash by creating an interactive Curriculum-Vitae (CV) portfolio website. It contains the main page, where students briefly introduce themselves, provide contact information and includes hyperlinks that fetches user to respective pages of students' CV; subsequently, the user will be brought to a new page which contains detailed CV of the respective student. 
+Description: This project aims to showcase students' understanding towards the use of coding languages and fundamentals like HTML, CSS, JavaScript, Git, GitHub and Bash by creating an interactive Curriculum-Vitae (CV) portfolio website. It contains the main page, where the members have briefly introduce themselves, provide contact information and includes hyperlinks that fetches user to respective pages of members' CV; subsequently, the user will be brought to a new page which contains  CV with detailed description of the respective member after tapping onto the hyperlink. 
 
 
 Instructions to run the project locally:
@@ -16,7 +16,8 @@ Instructions to run the project locally:
 4. Open your text editor(Visual Studio Code, Atom, or Sublime Text), and open the terminal by using the command ('command' + '~' for MacOS) / ('Ctrl' + 'Shift' + '`' for WindowsOS).
 4. Then, type "git init" to the terminal to initiate Git.
 5. After initiation, type "git clone" + (the url you copied from step 3)
-6. 
+6. It should show you all the documents after this step. Then, install the extension, 'Live Server' in VS code to run the program live.
+7. Please open the html file and right-click, choose the option: 'run with LiveServer', it will direct you to the page of our project. 
 
 
 
