@@ -1,3 +1,4 @@
+/* HEADER */
 .myDiv{
             margin-top: 40px;
             height: 60px;
@@ -11,6 +12,8 @@
 .myDiv h2{
     color:white;
 }
+
+/* CAROUSEL EFFECT */
 .carousel {
     margin: 0 auto;
     margin-top: 45px;
@@ -19,8 +22,8 @@
     overflow: hidden;
     display: flex;
 }
-.carousel::-webkit-scrollbar{
-    display:none;
+.carousel:-webkit-scrollbar{
+    display: none;
 }
 .group {
     display: flex;
@@ -38,6 +41,7 @@
     align-items: center;
     min-height: 80px;
 }
+
 @keyframes scrolling{
     0%{
        transform: translateX(0);
@@ -47,18 +51,6 @@
     }
 }
 
-.container {
-    display: flex;
-    margin: 10px 10px;
-
-    background-color: #e2e2c9;
-}
-.container div{
-    background-color: white;
-    margin: 10px;
-    padding: 50px;
-    font-size: 20px;
-}
 
 * {
     margin:0;
@@ -66,6 +58,7 @@
     box-sizing: border-box;
 }
 
+/* BASIC LAYOUT */
 html{
     scroll-behavior: smooth;
 }
@@ -74,6 +67,7 @@ body{
     font-family:'Times New Roman', Times, serif;
 }
 
+/* NAV BAR IN ABOUT ME */
 a {
     color:rgb(31, 118, 17);
     text-decoration: none;
@@ -108,16 +102,15 @@ nav .right a:last-child{
 /* SECTION1 */
 .cont1{
     display: flex;
-    margin: 60px 60px;
-    padding:40px 40px;
-    margin-top: 20px;
-    margin-left:20px;
-    margin-right:50px;
+    margin: 60px auto;
+    margin-top: 5px;
+    padding: 40px;
     border-radius:5%;
     background-color: #ffffff;
     border-style:inset;
     border-color:rgb(10, 41, 213);
     align-items: center;
+    max-width: 1200px;
 }
 
 .intro-section{
@@ -127,8 +120,8 @@ nav .right a:last-child{
     padding: 50px 50px;
     margin: 50px 50px;
     margin-top:5px;
+    margin-bottom: 5px;
     gap: 40px;
-
 }
 
 .intro-section .text{
@@ -172,11 +165,11 @@ nav .right a:last-child{
     border-color:rgb(0, 0, 0);
 }
 
-/*Section 2*/
+/* SECTION 2 */
 .skills-section{
     padding: 10px;
-    margin-top:40px;
-    margin-bottom: 50px;
+    margin-top:30px;
+    margin-bottom: 30px;
 }
 
 .skills-section h2{
@@ -184,47 +177,58 @@ nav .right a:last-child{
     font-size:30px;
 }
 
-
 .container {
     display: flex;
     margin: 70px 70px;
     margin-top: 20px;
-    background-color: #FAF3DD;
+    background-color: #e9edc9;
+    border-radius:5px;
 }
 .container div{
+    display: flex;
     background-color: white;
-    margin: 10px;
-    padding: 50px;
-    font-size: 17px;
+    border-radius: 30px;
+    border: 1px solid black;
+    margin: 20px;
+    padding: 40px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.5;
 }
 
-/* Section 3*/
-.accomplishments-section {
-    background-color: rgb(225, 246, 243);
-    padding:20px;
+/* SECTION 3*/
+.experience-section {
+    padding: 60px;
+    margin: 40px;
 }
 
-.accomplishments-section h2{
+.experience-section h2{
     text-align: center;
     font-size:30px;
 }
 
-.accomplishments-section p{
-    margin:20px;
-    padding:20px;
+.experience-section p{
+    margin-top: 20px;
     text-align: left;
     font-size: 20px;
+    line-height: 1.5;
 }
 
 /*SECTION 4*/
 .contact-section{
     padding: 0 50px;
+    margin: 40px;
     margin-top: 50px;
     margin-bottom: 50px;
 }
 
 .contact-section h2 {
     font-size: 30px;
+}
+
+.contact-section p{
+    font-size: 20px;
+    line-height: 2;
 }
 
 .contact-section .info {
