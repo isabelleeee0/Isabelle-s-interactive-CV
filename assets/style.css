@@ -12,6 +12,7 @@
 
 body { 
     font-family: Arial, sans-serif;
+    line-height: 1.7;
     background: linear-gradient(-45deg,#F6FFDC,#fbe7f1, #DAF9DE,#CFECF3);
     background-size: 400%, 400%;
     animation: change 15s ease infinite;
@@ -126,7 +127,7 @@ hero, #hero {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 40px 20px;
+    padding: 10px 0px;
     background-color: var(--light-blue);
     border: 5px solid white;
 }
@@ -137,8 +138,8 @@ hero h1, #hero h1 {
     font-size: 2rem;
 }
 hero img, #hero img {
-    width: 60px;
-    height: 60px;
+    width: 130px;
+    height: 160px;
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid var(--primary);
@@ -505,20 +506,11 @@ body.dark-mode .team-card p { color: #b0b0b0; }
 }
 
 
-* {
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 /* BASIC LAYOUT */
 html{
     scroll-behavior: smooth;
 }
 
-body{
-    font-family:'Times New Roman', Times, serif;
-}
 
 /* NAV BAR IN ABOUT ME */
 a {
@@ -526,55 +518,34 @@ a {
     text-decoration: none;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    padding:0 50px;
-    height: 80px;
-    align-items: center;
-}
 
-nav .left a{
-    color: var(--text-color);
-    font-size: 22px;
-    font-weight: 600;
-}
-
-nav .right a{
-    color: var(--text-color);
-    margin: 0 10px;
-}
-
-nav .right a:last-child{
-    color: var(--background-color);
-    background-color: var(--text-color);
-    padding: 5px 15px;
-    border-radius: 5px;
-}
-
-/* SECTION1 */
+/* SECTION1: ABOUT ME */
 .cont1{
     display: flex;
+    flex-wrap: wrap;
     margin: 60px auto;
-    margin-top: 5px;
+    margin-top: 0px;
     padding: 40px;
     border-radius:5%;
-    background-color: #ffffff;
+    background-color: #fcecec;
     border-style:inset;
     border-color:rgb(10, 41, 213);
     align-items: center;
     max-width: 1200px;
+    flex: 5;
 }
 
 .intro-section{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 50px;
-    margin: 50px 50px;
+    padding: 50px;
+    margin: 50px auto;
     margin-top:5px;
     margin-bottom: 5px;
     gap: 40px;
+    max-width: 1200px;
 }
 
 .intro-section .text{
@@ -584,14 +555,17 @@ nav .right a:last-child{
 .intro-section .text p{
     margin-top: 25px;
     font-size: 17px;
+    color:#111;
 }
 
 .intro-section .text h2{
     font-size: 50px;
+    color: rgb(9, 70, 111);
 }
 
 .intro-section .text .links{
     margin-top: 30px;
+    color: black;
 }
 
 .intro-section .text .links a{
@@ -612,47 +586,66 @@ nav .right a:last-child{
 }
 
 .intro-section .photo img{
-    width:300px;
+    width: 100%;
+    max-width: 300px;
     border-radius: 90%;
     border-style:solid;
     border-color:rgb(0, 0, 0);
+    margin: 60px auto;
 }
 
-/* SECTION 2 */
+/* SECTION 2: SKILLS */
 .skills-section{
     padding: 10px;
-    margin-top:30px;
+    margin-top:0px;
     margin-bottom: 30px;
+    width: 100%;
 }
 
 .skills-section h2{
     text-align: center;
     font-size:30px;
+    color: rgb(9, 70, 111);
 }
+
 
 .container {
     display: flex;
-    margin: 70px 70px;
-    margin-top: 20px;
-    background-color: #e9edc9;
-    border-radius:5px;
+    flex-wrap: nowrap;
+    width: 100%;
+    align-items:stretch;
+    margin: auto;
+    padding: 45px 35px;
+    margin-top: 10px;
+    background-color: #e8fefa;
+    border-radius:30px;
+    height: 400px;
+    max-width: 1400px;
+    color: black
 }
 .container div{
     display: flex;
+    width: 95%;
+    flex-direction: column;
     background-color: white;
-    border-radius: 30px;
-    border: 1px solid black;
-    margin: 20px;
-    padding: 40px;
-    font-size: 18px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 12px;
+    padding: 25px 15px;
+    font-size: 16px;
     text-align: center;
+    align-items: center;
     line-height: 1.5;
+    flex: 1 1 0px;
 }
 
-/* SECTION 3*/
+/* SECTION 3: EXPERIENCE */
 .experience-section {
-    padding: 60px;
-    margin: 40px;
+    padding:20px auto;
+    margin:40px auto;
+    margin-top: 80px;
+    max-width: 1135px;
+    text-align: center;
 }
 
 .experience-section h2{
@@ -663,16 +656,17 @@ nav .right a:last-child{
 .experience-section p{
     margin-top: 20px;
     text-align: left;
-    font-size: 20px;
+    font-size: 17px;
     line-height: 1.5;
 }
 
-/*SECTION 4*/
+/*SECTION 4: CONTACT */
 .contact-section{
     padding: 0 50px;
-    margin: 40px;
-    margin-top: 50px;
+    margin: 20px auto;
+    margin-top: 100px;
     margin-bottom: 50px;
+    max-width: 1200px;
 }
 
 .contact-section h2 {
@@ -680,12 +674,14 @@ nav .right a:last-child{
 }
 
 .contact-section p{
-    font-size: 20px;
+    font-size: 17px;
     line-height: 2;
 }
 
 .contact-section .info {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 50px;
 }
 
