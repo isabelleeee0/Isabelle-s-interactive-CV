@@ -1,86 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">    
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>"DuoFolio"</title>
-    <link rel="stylesheet" href="assets\style.css">
-    <script src="assets\script.js" defer></script>
+    <title>DuoFolio</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="app.js" defer></script>
 </head>
-<body>
+<body data-page="index">
     <header>
-        <button id="themeButton" aria-label="Toggle Dark Mode"> 🌘</button>
+        <button id="themeButton" aria-label="Toggle Dark Mode">🌘</button>
         <nav>
-            <ul>
-                <li><a href="#hero" >Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#our-team">Our Team</a></li>
-                <li><a href="duofolioCO@gmail.com">Contact</a></li>
-            </ul>
+            <ul id="nav-list"></ul>
         </nav>
     </header>
-    <section id="hero">
-    <video autoplay muted loop playsinline id="hero-video"> 
-        <source src="assets/image/vecteezy_chatting-between-two-person-men-and-woman-animated-footage_46286512.mp4" type="video/mp4">
-    </video>
-    <div class="hero-content">
-        <h1>Two Developers.<br> One Vision.</h1>
-        <p>Doesn't matter which one you choose, both share the podium of software development.</p>
-    </div>
-</section>
-
-    <section id="about">
-        <h2>About Us</h2>
-        <p>We are two passionate developers with a shared vision for creating innovative software solutions. </p>
-        <p>With an intermediate level of experience in the industry, we have honed our skills in various programming languages and frameworks. Our goal is to deliver high quality, user friendly applications that make a difference in people's lives.</p>
-        <p>Doesn't matter which one you choose, both share the podium of software development.</p>
-    </div>
-    </section>
-
-   <section id="our-team">
-    <h2>Our Team</h2>
-    <div class="team-grid">
-        <div class="team-card">
-            <img src="assets/image/rafik_main.jpeg" alt="Rafik">
-            <div class="team-info">
-                <h3>Rafik</h3>
-                <p>Full stack developer with expertise in JavaScript and Python.</p>
-                <a href="cv-rafik.html">View CV →</a>
+    <main>
+        <section id="hero">
+            <video autoplay muted loop playsinline id="hero-video">
+                <source src="assets/image/vecteezy_chatting-between-two-person-men-and-woman-animated-footage_46286512.mp4" type="video/mp4">
+            </video>
+            <div class="hero-content">
+                <h1 id="hero-title"></h1>
+                <p id="hero-description"></p>
             </div>
-        </div>
-        <div class="team-card">
-            <img src="assets/image/IMG_0426 2.JPG" alt="Isabelle">
-            <div class="team-info">
-                <h3>Isabelle</h3>
-                <p>Backend developer specialising in Java, C#, and Go.</p>
-                <a href="i_resume.html">View CV →</a>
-            </div>
-        </div>
-    </div>
-</section>
-    <section id="background-animation">
-        <div class="stars">
-            <img src="assets/image/360_F_955940886_GfoYpchaBcF2rtXmcuvzsKQ4KvORqh4H-removebg-preview.png">
-            <img src="assets/image/360_F_955940886_GfoYpchaBcF2rtXmcuvzsKQ4KvORqh4H-removebg-preview.png">
-            <img src="assets/image/360_F_955940886_GfoYpchaBcF2rtXmcuvzsKQ4KvORqh4H-removebg-preview.png">
-            <img src="assets/image/360_F_955940886_GfoYpchaBcF2rtXmcuvzsKQ4KvORqh4H-removebg-preview.png">
-            <img src="assets/image/360_F_955940886_GfoYpchaBcF2rtXmcuvzsKQ4KvORqh4H-removebg-preview.png">
-            <img src="assets/image/360_F_955940886_GfoYpchaBcF2rtXmcuvzsKQ4KvORqh4H-removebg-preview.png">
-            <img src="assets/image/360_F_955940886_GfoYpchaBcF2rtXmcuvzsKQ4KvORqh4H-removebg-preview.png">
-            <img src="assets/image/360_F_955940886_GfoYpchaBcF2rtXmcuvzsKQ4KvORqh4H-removebg-preview.png">
-        </div>
-    </section>
-</body>
-<footer>
-    <p>&copy; 2024 DuoFolio. All rights reserved.</p>
-    <nav>
-            <ul>
-                <li><a href="#hero" >Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#our-team">Our Team</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+        </section>
+        <section id="about">
+            <h2 id="about-heading"></h2>
+            <div id="about-paragraphs"></div>
+        </section>
+        <section id="our-team">
+            <h2 id="our-team-heading"></h2>
+            <div class="team-grid" id="team-grid"></div>
+        </section>
+        <section id="background-animation">
+            <div class="stars" id="stars-container"></div>
+        </section>
+    </main>
+    <footer>
+        <p id="footer-text"></p>
+        <nav>
+            <ul id="footer-nav"></ul>
         </nav>
-    <p><span id="current-date"></span></p>
-</footer>
+        <p><span id="current-date"></span></p>
+    </footer>
+</body>
 </html>

@@ -3,121 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>"DuoFolio - Rafik's CV"</title>
-    <link rel="stylesheet" href="assets\style.css">
-    <script src="assets\script.js" defer></script>
+    <title>DuoFolio - Rafik's CV</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="app.js" defer></script>
 </head>
-<body>
+<body data-page="cv_rafik">
     <header>
-        <button id="themeButton" aria-label="Toggle Dark Mode"> 🌘</button>
+        <button id="themeButton" aria-label="Toggle Dark Mode">🌘</button>
         <nav>
-            <ul>
-                <li><a href="index.html" >Home</a></li>
-                <li><a href="#personal-information">Personal Information</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#languages">Languages</a></li>
-                <li><a href="#offers">What I Offer</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <ul id="nav-list"></ul>
         </nav>
     </header>
     <main id="cv">
-    <hero id="hero">
-        <h1>It's Rafik   <img width="100" height="100" 
-            <source src="assets\image\IMG_1651.jpeg" alt="Rafik"></h1>
-        <p>Discover my journey as a full stack developer, showcasing my skills, experience, and passion for creating innovative software solutions.</p>
-    
-    </hero>
-    <section id="Personal-Information">
-        <h2>Get to Know Me</h2>
-        <ul>
-            <li><strong>Name:</strong> Rafik</li>   
-            <li><strong>Nationality:</strong> Algerian</li>
-            <li><strong>Age:</strong> 17</li>
-            <li><strong>Location:</strong> Leipzig, Germany</li>
-        </ul>
-    </section>
-    <section id="Education">
-        <h2>Education</h2>
-            <ul>
-                <li><strong> Bsc in Computer Science</strong> - Lancaster University- 2026-</li>
-                <li><strong>High School Diploma</strong> Cheraga Algiers- 2023-2025</li>
-            </ul>
-    </section>
-    <section id="Skills">
-        <h2>Technical Skills</h2>
-        <ul>
-            <li><strong>Programming Languages:</strong> JavaScript, Python, HTML, CSS, Bash</li>
-            <li><strong>Database Management:</strong> MySQL, XML</li>
-            <li><strong>Version Control:</strong> Git, GitHub</li>
-            <li><strong>Problem Solving:</strong> Strong analytical and problem solving skills</li>
-        </ul>
-    </section>
-
-    <section id="Experience">
-        <h2>Experience/Projects</h2>
-        <ul>
-            <li><strong>Vending Machine Programe</strong> 
-                Modelled transaction logic as a finite state machine: states (idle, selecting, processing, dispensing, error), transitions driven by user input and inventory conditions.
-                 Implemented class separation for product catalogue, session state, and I/O handling. No external libraries. 
-                 Focus on correctness of state transitions and input sanitisation.
-            </li>
-            <li><strong>Master class: Partical therapy</strong> 
-                Designed and delivered advanced seminar content to peers.
-                Coordinated logistics for an international academic event. 
-                Used MATRAD for quantitative analysis tasks.
-            </li>
-            <li><strong>Personal Portfolio Website</strong> 
-                    Developed a responsive portfolio site using HTML, CSS, and JavaScript. 
-                    Implemented a dark mode toggle and smooth scrolling for enhanced user experience. 
-                    Deployed on GitHub Pages; focused on clean code and accessibility.
-            </li>
-        </ul>    
-    </section>
-    <section id="languages">
-        <h2>Communication with International Teams and Clients</h2>
-        <ul>
-            <li><strong>Arabic:</strong> Native</li>
-            <li><strong>French:</strong> Fluent</li>
-            <li><strong>English:</strong> Proficient</li>
-            <li><strong>German:</strong> Actively improving</li>
-        </ul>
-    </section>
-    <section id="offers">
-        <h2>What I Offer you</h2>
-        <ul>
-            <li><strong>Passion for Learning:</strong> Eager to continuously expand my skill set and stay updated with industry trends.</li>
-            <li><strong>Team Collaboration:</strong> Strong interpersonal skills and a collaborative mindset to work effectively in team environments.</li>
-            <li><strong>Problem Solving:</strong> Analytical thinker with a knack for finding creative solutions to complex challenges.</li>
-            <li><strong>Adaptability:</strong> Quick learner who thrives in dynamic environments and can easily adapt to new technologies and methodologies.</li>
-            <li><strong>Good spirit:</strong> Like common sometimes you need to ease a bit, there where I come in.</li>
-        </ul>    
-    </section>
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Feel free to reach out to me for any inquiries, collaborations, or opportunities. I am always open to connecting with fellow developers and industry professionals.</p>
-        <ul>
-            <li><strong>Email:</strong> rafikakaba2@gmail.com</li>
-            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/rafik-akaba-3a70813aa/">linkedin.com/in/rafik-akaba</a></li>
-            <li><strong>GitHub:</strong> <a href="https://github.com/Rafik-111">github.com/Rafik-111</a></li>
-        </ul>
-    </section>
+        <section id="hero">
+            <h1 id="hero-title"></h1>
+            <img id="hero-image" src="" alt="" width="100" height="100">
+            <p id="hero-description"></p>
+        </section>
+        <section id="personal-information">
+            <h2 id="personal-heading"></h2>
+            <ul id="personal-items"></ul>
+        </section>
+        <section id="education">
+            <h2 id="education-heading"></h2>
+            <ul id="education-items"></ul>
+        </section>
+        <section id="skills">
+            <h2 id="skills-heading"></h2>
+            <ul id="skills-items"></ul>
+        </section>
+        <section id="experience">
+            <h2 id="experience-heading"></h2>
+            <ul id="experience-items"></ul>
+        </section>
+        <section id="languages">
+            <h2 id="languages-heading"></h2>
+            <ul id="languages-items"></ul>
+        </section>
+        <section id="offers">
+            <h2 id="offers-heading"></h2>
+            <ul id="offers-items"></ul>
+        </section>
+        <section id="contact">
+            <h2 id="contact-heading"></h2>
+            <p id="contact-description"></p>
+            <ul id="contact-items"></ul>
+        </section>
     </main>
-</body>
-<footer>
-    <p>&copy; 2024 DuoFolio. All rights reserved.</p>
-     <nav>
-            <ul>
-                <li><a href="#hero" >Home</a></li>
-                <li><a href="#personal-information">Personal Information</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#languages">Languages</a></li>
-                <li><a href="#offers">What I Offer</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+    <footer>
+        <p id="footer-text"></p>
+        <nav>
+            <ul id="footer-nav"></ul>
         </nav>
-</footer>
+    </footer>
+</body>
+</html>

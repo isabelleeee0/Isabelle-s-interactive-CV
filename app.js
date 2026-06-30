@@ -295,14 +295,15 @@ function initCurrentDate() {
 }
 
 function renderPageData(page, data) {
-  if (!data || !data[page]) return;
-  const pageData = data[page];
+  const pageKey = page === 'i_resume' ? 'cv' : page;
+  if (!data || !data[pageKey]) return;
+  const pageData = data[pageKey];
   document.title = pageData.title || document.title;
   renderNav(pageData.nav);
   renderFooter(pageData.footer);
-  if (page === 'index') renderIndex(pageData);
-  else if (page === 'i_resume') renderResume(pageData);
-  else if (page === 'cv_rafik') renderRafik(pageData);
+  if (pageKey === 'index') renderIndex(pageData);
+  else if (pageKey === 'cv') renderResume(pageData);
+  else if (pageKey === 'cv_rafik') renderRafik(pageData);
 }
 
 async function getPageData() {

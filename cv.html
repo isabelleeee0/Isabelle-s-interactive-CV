@@ -5,127 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="assets\script.js" defer></script>
+    <script src="app.js" defer></script>
     <title>Isabelle's CV</title>
-
 </head>
-
-</div>
-<body>
+<body data-page="cv">
     <header>
-        <button id="themeButton" aria-label="Toggle Dark Mode"> 🌘</button>
+        <button id="themeButton" aria-label="Toggle Dark Mode">🌘</button>
         <nav>
-            <ul>
-                <li><a href="index.html" >Home</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <ul id="nav-list"></ul>
         </nav>
     </header>
-
-    <div class="carousel">
-        <div class="group">
-            <div class="card">Welcome to Isabelle's CV!</div>
-            <div class="card">Welcome to Isabelle's CV!</div>
-        </div>
-        <div class="group" aria-hidden="true">
-            <div class="card">Welcome to Isabelle's CV!</div>
-            <div class="card">Welcome to Isabelle's CV!</div>
-        </div>
-    </div>
-
-
-    <div class="isabelle-CV">
-        <!--SECTION1-->
-        <section class="intro-section">
-            <div class="cont1">
-                <div class="text">
-                    <h2>About me... 👾</h2>
-                    <p>Hey there! My name is Isabelle, an eighteen year old backend developer that handles the backbone of a website or an app. Since middle school, I was fascinated with coding and had developed a few websites just by self-learning. I may not be the greatest in the room, but there is always something in me that would catch your attention. Anyway, you might already got to know me in the introduction before; however, this page will further demonstrate my abilities and if you're interested to collab, you know where to find me.</p>
-                    <p><b>Language spoken: </b>English (native), Chinese (native), Malay (fluent), German (still in progress)</p>
-                    <p><b>Education: </b>International General Cambridge Secondary Education & Bachelor's Degree in Software Engineering (pursuing) </p>
-
-            <div class="links">
-                <a href="#skills">
-                    <i class="fa-solid fa-code"></i></a>
-                    <span>Skills</span>
-
-
-                <a href="#experience">
-                    <i class="fa-solid fa-award"></i></a>
-                    <span>Experience</span>
-                    
-
-                <a href="#contact">
-                    <i class="fa-solid fa-phone"></i></a>
-                    <span>Contact</span>
-                    
+    <main>
+        <div class="carousel" id="carousel"></div>
+        <div class="isabelle-CV">
+            <section class="intro-section">
+                <div class="cont1">
+                    <div class="text">
+                        <h2 id="intro-heading"></h2>
+                        <div id="intro-paragraphs"></div>
+                        <p><strong>Language spoken:</strong> <span id="intro-languages"></span></p>
+                        <p><strong>Education:</strong> <span id="intro-education"></span></p>
+                        <div class="links" id="intro-links"></div>
+                    </div>
                 </div>
-            </div>
-            </div>
-
-            <div class="photo">
-                <img src="assets/image/IMG_4132.JPG" alt="Isabelle's photo">
-            </div>
-        </section> 
-
-        <!--SECTION2-->
-        <section id="skills" class="skills-section"> 
-             <h2><u>SKILLS</u></h2>
-            <div class = "container">
-                <div style="flex:2">Strong cooperative skills with the ability to work effectively with teams.</div>
-                <div style="flex:2">Always willing to learn and never stops being curious.</div>
-                <div style="flex:2">Coding language acquired:<br>HTML, GO, CSS, JavaScript, Python, SQL.</div>
-                <div style="flex:2">Able to analyse and solve problems swiftly using critical-thinking skills.</div>
-                <div style="flex:2">Capable of introducing innovative, modern, and refreshing ideas.</div>
-            </div>
-        </section> 
-
-        <!--SECTION3-->
-        <section id="experience" class="experience-section">
-            <h2><u>EXPERIENCE</u></h2>
-            <p><b>1. Varsity Hackathon (V HACK 2025)</b></p>
-            <p>- Successfully secured <b>1st runner-up</b> in the competition.</p>
-            <p><b>2. Advanced Web Application Development</b></p>
-            <p>- Designed an effective application interface in visual environment, implementing variables, data structures, database management, modern web APIs, and web connections</p>
-            <p><b>3. Web Design </b></p>
-            <p>- Collaborated with designers to implement new user interface features, enhancing user experience across multiple platforms using HTML, CSS, and JavaScript.</p>
-        </section> 
-
-        <!--SECTION4-->
-        <section id="contact" class="contact-section">
-             <h2>CONTACT</h2>
-
-             <div class="info">
-                <div class ="text">
-                    <p>Here comes to the end of my CV. If ever you are curious my projects or interested in working with me, feel free to hit the buttons below to find out my GitHub, LinkedIn, and email account to explore more. Looking forward to expanding my IT circle and seeing what masterpiece we can create together!</p>
+                <div class="photo">
+                    <img src="assets/image/IMG_4132.JPG" alt="Isabelle's photo">
                 </div>
- 
-                <form>
-                    <label for="name">Name</label>
-                    <input type="text" id ="name">
-
-                    <label for="email">Email</label>
-                    <input type="email" id ="email">
-
-                    <label for="message">Message</label>
-                    <textarea id ="message" cols="30" rows="20"></textarea>
-
-                    <button type="submit">Send me</button>
-                </form>
-             </div>
-        </section> 
-    </div>
+            </section>
+            <section id="skills" class="skills-section">
+                <h2 id="skills-heading"></h2>
+                <div class="container" id="skills-items"></div>
+            </section>
+            <section id="experience" class="experience-section">
+                <h2 id="experience-heading"></h2>
+                <div id="experience-items"></div>
+            </section>
+            <section id="contact" class="contact-section">
+                <h2 id="contact-heading"></h2>
+                <div class="info">
+                    <div class="text">
+                        <p id="contact-description"></p>
+                    </div>
+                    <form>
+                        <label for="name" id="label-name">Name</label>
+                        <input type="text" id="name">
+                        <label for="email" id="label-email">Email</label>
+                        <input type="email" id="email">
+                        <label for="message" id="label-message">Message</label>
+                        <textarea id="message" cols="30" rows="20"></textarea>
+                        <button type="submit" id="contact-button"></button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p id="footer-text"></p>
+        <nav>
+            <ul id="footer-nav"></ul>
+        </nav>
+    </footer>
 </body>
-<footer>
-    <p>&copy; 2024 DuoFolio. All rights reserved.</p>
-     <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="https://github.com/">GitHub</a></li>
-                <li><a href="https://www.linkedin.com/feed/">LinkedIn</a></li>
-                <li><a href="i.yan@lancaster.ac.uk">Email</a></li>
-            </ul>
-    </nav>
-</footer>
 </html>

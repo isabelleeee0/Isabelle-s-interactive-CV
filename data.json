@@ -54,7 +54,7 @@
       ]
     }
   },
-  "i_resume": {
+  "cv": {
     "title": "Isabelle's CV",
     "nav": [
       { "href": "index.html", "label": "Home" },
