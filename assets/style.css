@@ -173,6 +173,9 @@ main img {
 .stars img{
     width: 50px;
     animation: stars 5s linear infinite;
+    border: none;
+    background: transparent;
+    box-shadow: none;
 }
 
 .stars {

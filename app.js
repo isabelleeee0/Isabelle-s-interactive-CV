@@ -169,92 +169,6 @@ function renderResume(pageData) {
   setText('contact-button', pageData.contact.form.button);
 }
 
-function renderRafik(pageData) {
-  if (!pageData) return;
-  setText('hero-title', pageData.hero.heading);
-  setText('hero-description', pageData.hero.description);
-  const heroImage = document.getElementById('hero-image');
-  if (heroImage) {
-    heroImage.src = pageData.hero.image;
-    heroImage.alt = pageData.hero.alt;
-  }
-
-  setText('personal-heading', pageData.personalInformation.heading);
-  const personalList = clearChildren('personal-items');
-  if (personalList) {
-    pageData.personalInformation.items.forEach((item) => {
-      const li = document.createElement('li');
-      li.innerHTML = `<strong>${item.label}:</strong> ${item.value}`;
-      personalList.appendChild(li);
-    });
-  }
-
-  setText('education-heading', pageData.education.heading);
-  const educationList = clearChildren('education-items');
-  if (educationList) {
-    pageData.education.items.forEach((item) => {
-      const li = document.createElement('li');
-      li.innerHTML = `<strong>${item.title}</strong> - ${item.location}`;
-      educationList.appendChild(li);
-    });
-  }
-
-  setText('skills-heading', pageData.skills.heading);
-  const skillsList = clearChildren('skills-items');
-  if (skillsList) {
-    pageData.skills.items.forEach((item) => {
-      const li = document.createElement('li');
-      li.innerHTML = `<strong>${item.label}:</strong> ${item.value}`;
-      skillsList.appendChild(li);
-    });
-  }
-
-  setText('experience-heading', pageData.experience.heading);
-  const experienceList = clearChildren('experience-items');
-  if (experienceList) {
-    pageData.experience.items.forEach((item) => {
-      const li = document.createElement('li');
-      li.innerHTML = `<strong>${item.title}</strong> ${item.description}`;
-      experienceList.appendChild(li);
-    });
-  }
-
-  setText('languages-heading', pageData.languages.heading);
-  const languagesList = clearChildren('languages-items');
-  if (languagesList) {
-    pageData.languages.items.forEach((item) => {
-      const li = document.createElement('li');
-      li.innerHTML = `<strong>${item.language}:</strong> ${item.level}`;
-      languagesList.appendChild(li);
-    });
-  }
-
-  setText('offers-heading', pageData.offers.heading);
-  const offersList = clearChildren('offers-items');
-  if (offersList) {
-    pageData.offers.items.forEach((item) => {
-      const li = document.createElement('li');
-      li.innerHTML = `<strong>${item.title}:</strong> ${item.description}`;
-      offersList.appendChild(li);
-    });
-  }
-
-  setText('contact-heading', pageData.contact.heading);
-  setText('contact-description', pageData.contact.description);
-  const contactList = clearChildren('contact-items');
-  if (contactList) {
-    pageData.contact.items.forEach((item) => {
-      const li = document.createElement('li');
-      if (item.href) {
-        li.innerHTML = `<strong>${item.label}:</strong> <a href="${item.href}">${item.value}</a>`;
-      } else {
-        li.innerHTML = `<strong>${item.label}:</strong> ${item.value}`;
-      }
-      contactList.appendChild(li);
-    });
-  }
-}
-
 function initSmoothScroll() {
   const navLinks = document.querySelectorAll('a[href^="#"]');
   navLinks.forEach((link) => {
@@ -303,7 +217,6 @@ function renderPageData(page, data) {
   renderFooter(pageData.footer);
   if (pageKey === 'index') renderIndex(pageData);
   else if (pageKey === 'cv') renderResume(pageData);
-  else if (pageKey === 'cv_rafik') renderRafik(pageData);
 }
 
 async function getPageData() {

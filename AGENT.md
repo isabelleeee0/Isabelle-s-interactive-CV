@@ -2,19 +2,23 @@
 
 This environment tracks the current requested workspace changes and files.
 
+> Do not change any code before any instructions are given.
+
 ## Modified files
 - `index.html`
-- `i_resume.html`
-- `assets/script.js`
-- `assets/style.css`
+- `cv.html`
+- `data.json`
+- `style.css`
+- `app.js`
 
 ## Purpose
-- `index.html`: main DuoFolio landing page with team introduction and navigation.
-- `i_resume.html`: Isabelle's individual CV page with interactive section toggles and contact form feedback.
-- `assets/script.js`: shared JavaScript for smooth scrolling, theme toggle, form handling, and toggling resume sections.
-- `assets/style.css`: shared styling updates for resume sections, contact form, responsive layout, and dark mode.
+- `index.html`: main Isabelle landing page and portfolio introduction.
+- `cv.html`: Isabelle's CV page with resume details and interactive sections.
+- `data.json`: structured page content and navigation data for Isabelle-only pages.
+- `style.css`: root stylesheet for the current homepage and resume layout.
+- `app.js`: JavaScript rendering and behavior for Isabelle's pages.
 
 ## Notes
 - No other files in the repository were modified.
-- The resume page now includes section show/hide controls and improved form UX.
-- The main page now uses consistent asset paths and a working footer structure.
+- The site is now focused on Isabelle-only content, with Rafik/DuoFolio references removed.
+- Do not modify code unless explicitly instructed.

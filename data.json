@@ -1,38 +1,30 @@
 {
   "index": {
-    "title": "DuoFolio",
+    "title": "Isabelle Portfolio",
     "nav": [
       { "href": "#hero", "label": "Home" },
       { "href": "#about", "label": "About" },
-      { "href": "#our-team", "label": "Our Team" },
-      { "href": "mailto:duofolioCO@gmail.com", "label": "Contact" }
+      { "href": "#our-team", "label": "Profile" },
+      { "href": "mailto:i.yan@lancaster.ac.uk", "label": "Contact" }
     ],
     "hero": {
-      "title": "Two Developers. One Vision.",
-      "description": "Doesn't matter which one you choose, both share the podium of software development."
+      "title": "Future Vision",
+      "description": "Backend developer building modern systems with clarity, speed, and elegance."
     },
     "about": {
-      "heading": "About Us",
+      "heading": "About",
       "paragraphs": [
-        "We are two passionate developers with a shared vision for creating innovative software solutions.",
-        "With an intermediate level of experience in the industry, we have honed our skills in various programming languages and frameworks. Our goal is to deliver high quality, user friendly applications that make a difference in people's lives.",
-        "Doesn't matter which one you choose, both share the podium of software development."
+        "I am Isabelle, a backend developer with a focus on clean architecture and reliable systems.",
+        "I enjoy turning complex problems into polished applications using modern backend techniques.",
+        "This page highlights my skills, experience, and the thoughtful approach I bring to every project."
       ]
     },
     "team": {
-      "heading": "Our Team",
+      "heading": "My Profile",
       "members": [
         {
-          "name": "Rafik",
-          "role": "Full stack developer with expertise in JavaScript and Python.",
-          "link": "cv-rafik.html",
-          "linkText": "View CV →",
-          "image": "assets/image/rafik_main.jpeg",
-          "alt": "Rafik"
-        },
-        {
           "name": "Isabelle",
-          "role": "Backend developer specialising in Java, C#, and Go.",
+          "role": "Backend developer specialising in Java, C#, Go, and collaborative engineering.",
           "link": "cv.html",
           "linkText": "View CV →",
           "image": "assets/image/IMG_0426 2.JPG",
@@ -45,12 +37,12 @@
       "alt": "floating star"
     },
     "footer": {
-      "text": "© 2024 DuoFolio. All rights reserved.",
+      "text": "© 2026 Isabelle. All rights reserved.",
       "nav": [
         { "href": "#hero", "label": "Home" },
         { "href": "#about", "label": "About" },
-        { "href": "#our-team", "label": "Our Team" },
-        { "href": "mailto:duofolioCO@gmail.com", "label": "Contact" }
+        { "href": "#our-team", "label": "Profile" },
+        { "href": "mailto:i.yan@lancaster.ac.uk", "label": "Contact" }
       ]
     }
   },
@@ -118,115 +110,13 @@
       }
     },
     "footer": {
-      "text": "© 2024 DuoFolio. All rights reserved.",
+      "text": "© 2026 Isabelle. All rights reserved.",
       "nav": [
         { "href": "index.html", "label": "Home" },
         { "href": "#contact", "label": "Contact" },
         { "href": "https://github.com/", "label": "GitHub" },
         { "href": "https://www.linkedin.com/feed/", "label": "LinkedIn" },
         { "href": "mailto:i.yan@lancaster.ac.uk", "label": "Email" }
-      ]
-    }
-  },
-  "cv_rafik": {
-    "title": "DuoFolio - Rafik's CV",
-    "nav": [
-      { "href": "index.html", "label": "Home" },
-      { "href": "#personal-information", "label": "Personal Information" },
-      { "href": "#education", "label": "Education" },
-      { "href": "#skills", "label": "Skills" },
-      { "href": "#experience", "label": "Experience" },
-      { "href": "#languages", "label": "Languages" },
-      { "href": "#offers", "label": "What I Offer" },
-      { "href": "#contact", "label": "Contact" }
-    ],
-    "hero": {
-      "heading": "It's Rafik",
-      "description": "Discover my journey as a full stack developer, showcasing my skills, experience, and passion for creating innovative software solutions.",
-      "image": "assets/image/IMG_1651.jpeg",
-      "alt": "Rafik"
-    },
-    "personalInformation": {
-      "heading": "Get to Know Me",
-      "items": [
-        { "label": "Name", "value": "Rafik" },
-        { "label": "Nationality", "value": "Algerian" },
-        { "label": "Age", "value": "17" },
-        { "label": "Location", "value": "Leipzig, Germany" }
-      ]
-    },
-    "education": {
-      "heading": "Education",
-      "items": [
-        { "title": "Bsc in Computer Science", "location": "Lancaster University - 2026-" },
-        { "title": "High School Diploma", "location": "Cheraga Algiers - 2023-2025" }
-      ]
-    },
-    "skills": {
-      "heading": "Technical Skills",
-      "items": [
-        { "label": "Programming Languages", "value": "JavaScript, Python, HTML, CSS, Bash" },
-        { "label": "Database Management", "value": "MySQL, XML" },
-        { "label": "Version Control", "value": "Git, GitHub" },
-        { "label": "Problem Solving", "value": "Strong analytical and problem solving skills" }
-      ]
-    },
-    "experience": {
-      "heading": "Experience/Projects",
-      "items": [
-        {
-          "title": "Vending Machine Program",
-          "description": "Modelled transaction logic as a finite state machine with states (idle, selecting, processing, dispensing, error). Implemented class separation for product catalogue, session state, and I/O handling. No external libraries. Focus on correctness of state transitions and input sanitisation."
-        },
-        {
-          "title": "Master class: Particle therapy",
-          "description": "Designed and delivered advanced seminar content to peers. Coordinated logistics for an international academic event. Used MATRAD for quantitative analysis tasks."
-        },
-        {
-          "title": "Personal Portfolio Website",
-          "description": "Developed a responsive portfolio site using HTML, CSS, and JavaScript. Implemented a dark mode toggle and smooth scrolling for enhanced user experience. Deployed on GitHub Pages; focused on clean code and accessibility."
-        }
-      ]
-    },
-    "languages": {
-      "heading": "Communication with International Teams and Clients",
-      "items": [
-        { "language": "Arabic", "level": "Native" },
-        { "language": "French", "level": "Fluent" },
-        { "language": "English", "level": "Proficient" },
-        { "language": "German", "level": "Actively improving" }
-      ]
-    },
-    "offers": {
-      "heading": "What I Offer you",
-      "items": [
-        { "title": "Passion for Learning", "description": "Eager to continuously expand my skill set and stay updated with industry trends." },
-        { "title": "Team Collaboration", "description": "Strong interpersonal skills and a collaborative mindset to work effectively in team environments." },
-        { "title": "Problem Solving", "description": "Analytical thinker with a knack for finding creative solutions to complex challenges." },
-        { "title": "Adaptability", "description": "Quick learner who thrives in dynamic environments and can easily adapt to new technologies and methodologies." },
-        { "title": "Good spirit", "description": "Like common sometimes you need to ease a bit, there where I come in." }
-      ]
-    },
-    "contact": {
-      "heading": "Contact Me",
-      "description": "Feel free to reach out to me for any inquiries, collaborations, or opportunities. I am always open to connecting with fellow developers and industry professionals.",
-      "items": [
-        { "label": "Email", "value": "rafikakaba2@gmail.com" },
-        { "label": "LinkedIn", "value": "linkedin.com/in/rafik-akaba", "href": "https://www.linkedin.com/in/rafik-akaba-3a70813aa/" },
-        { "label": "GitHub", "value": "github.com/Rafik-111", "href": "https://github.com/Rafik-111" }
-      ]
-    },
-    "footer": {
-      "text": "© 2024 DuoFolio. All rights reserved.",
-      "nav": [
-        { "href": "#hero", "label": "Home" },
-        { "href": "#personal-information", "label": "Personal Information" },
-        { "href": "#education", "label": "Education" },
-        { "href": "#skills", "label": "Skills" },
-        { "href": "#experience", "label": "Experience" },
-        { "href": "#languages", "label": "Languages" },
-        { "href": "#offers", "label": "What I Offer" },
-        { "href": "#contact", "label": "Contact" }
       ]
     }
   }
