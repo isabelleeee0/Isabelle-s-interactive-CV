@@ -1,17 +1,22 @@
 # Overview
-Member: Isabelle Yip
+<section>
+<h3>A project by Isabelle Yip</h3>
+</section>
 
 
 <section>
-<h1>Project Title: 25/26 LZIFC005L: Computer Science Ecosystems</h1>
+<h3>Project Title: 25/26 LZIFC005L: Computer Science Ecosystems</h3>
+
 
 Description: This project aims to showcase students' understanding towards the use of coding languages and fundamentals like HTML, CSS, JavaScript, Git, GitHub and Bash by creating an interactive Curriculum-Vitae (CV) portfolio website. It contains the main page, where the members have briefly introduce themselves, provide contact information and includes hyperlinks that fetches user to respective pages of members' CV; subsequently, the user will be brought to a new page which contains  CV with detailed description of the respective member after tapping onto the hyperlink. 
+
+</section>
 
 
 **** Repository link / Link to clone: https://github.com/isabelleeee0/Isabelle-s-interactive-CV.git ****
 
-
-Instructions to run the project locally:
+<section>
+<h3>Instructions to run the project locally: </h3>
 1. To start, please ensure your local computer has installed 'Git' and text editor such as Visual Studio Code, Atom, or Sublime Text.
 2. Go to the project page, find the "<> Code" symbol and click it.
 3. After clicking it, go to the local section and copy the url from the subsection: HTTPS.
@@ -22,7 +27,7 @@ Instructions to run the project locally:
 8. Then, install the extension, 'Live Server' in VS code to run the program live.
 9. Please open the html file and right-click, choose the option: 'Run with LiveServer', it will direct you to the page of our project. 
 
-
+</section>
 
 Resources used:
 1. https://www.linkedin.com/learning/learning-the-javascript-language-22309208/objects-references-and-functions?u=83351972 
