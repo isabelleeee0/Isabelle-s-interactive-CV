@@ -1,15 +1,14 @@
 # Overview
-Group Name: Group 1       
-
-Group Member: Isabelle Yip, Rafik Akaba
+Member: Isabelle Yip
 
 
-Project Title: 25/26 LZIFC005L: Computer Science Ecosystems / Coursework: Group Project
+<section>
+<h1>Project Title: 25/26 LZIFC005L: Computer Science Ecosystems</h1>
 
 Description: This project aims to showcase students' understanding towards the use of coding languages and fundamentals like HTML, CSS, JavaScript, Git, GitHub and Bash by creating an interactive Curriculum-Vitae (CV) portfolio website. It contains the main page, where the members have briefly introduce themselves, provide contact information and includes hyperlinks that fetches user to respective pages of members' CV; subsequently, the user will be brought to a new page which contains  CV with detailed description of the respective member after tapping onto the hyperlink. 
 
 
-**** Repository link / Link to clone: https://github.com/Rafik-111/Interactive-CV.git ****
+**** Repository link / Link to clone: https://github.com/isabelleeee0/Isabelle-s-interactive-CV.git ****
 
 
 Instructions to run the project locally:
@@ -35,4 +34,4 @@ Resources used:
 7. https://youtu.be/yefgBA1CecI?si=NTUvmyw648usWFB7 
 8. https://youtu.be/Slxdo0Dqxlk?si=9KeVsS6dUPwJu1WW 
 
-Thank you! We hope you enjoyed viewing our project.
+Thank you! It was a pleasure to have you seeing my project.
