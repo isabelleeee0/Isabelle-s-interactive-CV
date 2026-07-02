@@ -1,7 +1,6 @@
 # Overview
 <section>
 <h3>A project by Isabelle Yip</h3>
-</section>
 
 
 <section>
@@ -10,10 +9,9 @@
 
 Description: This project aims to showcase students' understanding towards the use of coding languages and fundamentals like HTML, CSS, JavaScript, Git, GitHub and Bash by creating an interactive Curriculum-Vitae (CV) portfolio website. It contains the main page, where the members have briefly introduce themselves, provide contact information and includes hyperlinks that fetches user to respective pages of members' CV; subsequently, the user will be brought to a new page which contains  CV with detailed description of the respective member after tapping onto the hyperlink. 
 
-</section>
-
 
 **** Repository link / Link to clone: https://github.com/isabelleeee0/Isabelle-s-interactive-CV.git ****
+
 
 <section>
 <h3>Instructions to run the project locally: </h3>
@@ -27,7 +25,6 @@ Description: This project aims to showcase students' understanding towards the u
 8. Then, install the extension, 'Live Server' in VS code to run the program live.
 9. Please open the html file and right-click, choose the option: 'Run with LiveServer', it will direct you to the page of our project. 
 
-</section>
 
 Resources used:
 1. https://www.linkedin.com/learning/learning-the-javascript-language-22309208/objects-references-and-functions?u=83351972 
@@ -39,4 +36,4 @@ Resources used:
 7. https://youtu.be/yefgBA1CecI?si=NTUvmyw648usWFB7 
 8. https://youtu.be/Slxdo0Dqxlk?si=9KeVsS6dUPwJu1WW 
 
-Thank you! It was a pleasure to have you seeing my project.
+Thank you! It is a pleasure to have you review my project.
