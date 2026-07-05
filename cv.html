@@ -9,6 +9,8 @@
     <title>Isabelle's CV</title>
 </head>
 <body data-page="cv">
+    <div id="scroll-progress" aria-hidden="true"></div>
+    <div id="cursor-glow" aria-hidden="true"></div>
     <header>
         <button id="themeButton" aria-label="Toggle Dark Mode">🌘</button>
         <nav>
@@ -18,7 +20,7 @@
     <main>
         <div class="carousel" id="carousel"></div>
         <div class="isabelle-CV">
-            <section class="intro-section">
+            <section class="intro-section" data-reveal="left">
                 <div class="cont1">
                     <div class="text">
                         <h2 id="intro-heading"></h2>
@@ -28,33 +30,63 @@
                         <div class="links" id="intro-links"></div>
                     </div>
                 </div>
-                <div class="photo">
-                    <img src="assets/image/IMG_4132.JPG" alt="Isabelle's photo">
+                <!-- CHANGE: Replaced plain photo with a work-lanyard structure. The strap + card get id="lanyard" so app.js can swing it left/right on scroll. -->
+                <div class="lanyard-wrapper" id="lanyard">
+                    <div class="lanyard-clip" aria-hidden="true"></div>
+                    <div class="lanyard-strap" aria-hidden="true"></div>
+                    <div class="lanyard-ring" aria-hidden="true"></div>
+                    <div class="photo lanyard-card" data-tilt>
+                        <img src="assets/image/IMG_4132.JPG" alt="Isabelle's photo">
+                        <div class="lanyard-meta">
+                            <span class="lanyard-label">STAFF</span>
+                            <span class="lanyard-name">Isabelle</span>
+                            <span class="lanyard-role">Backend Developer</span>
+                        </div>
+                    </div>
                 </div>
             </section>
-            <section id="skills" class="skills-section">
+            <section id="skills" class="skills-section" data-reveal="up">
                 <h2 id="skills-heading"></h2>
-                <div class="container" id="skills-items"></div>
+                <div class="container" id="skills-items" data-reveal-group data-tilt-group></div>
             </section>
-            <section id="experience" class="experience-section">
+            <section id="experience" class="experience-section" data-reveal="up">
                 <h2 id="experience-heading"></h2>
                 <div id="experience-items"></div>
             </section>
-            <section id="contact" class="contact-section">
+            <section id="contact" class="contact-section" data-reveal="up">
                 <h2 id="contact-heading"></h2>
-                <div class="info">
-                    <div class="text">
+                <!-- CHANGE: Rebuilt the contact section as a two-column grid: form fields inline on the left, live comments guestbook on the right. -->
+                <div class="contact-grid">
+                    <div class="contact-form-col">
                         <p id="contact-description"></p>
+                        <form id="contact-form">
+                            <!-- CHANGE: name / email / message are now on ONE inline row (see .form-row in style.css). -->
+                            <div class="form-row">
+                                <div class="form-field">
+                                    <label for="name" id="label-name">Name</label>
+                                    <input type="text" id="name" required>
+                                </div>
+                                <div class="form-field">
+                                    <label for="email" id="label-email">Email</label>
+                                    <input type="email" id="email" required>
+                                </div>
+                                <div class="form-field form-field--grow">
+                                    <label for="message" id="label-message">Message</label>
+                                    <input type="text" id="message" required>
+                                </div>
+                            </div>
+                            <button type="submit" id="contact-button"></button>
+                        </form>
                     </div>
-                    <form>
-                        <label for="name" id="label-name">Name</label>
-                        <input type="text" id="name">
-                        <label for="email" id="label-email">Email</label>
-                        <input type="email" id="email">
-                        <label for="message" id="label-message">Message</label>
-                        <textarea id="message" cols="30" rows="20"></textarea>
-                        <button type="submit" id="contact-button"></button>
-                    </form>
+                    <!-- CHANGE: New comments column so visitors can see what other people have written. -->
+                    <aside class="comments-col" aria-label="Visitor comments">
+                        <h3>What visitors are saying</h3>
+                        <div class="comments-scroll" id="comments-list"></div>
+                        <form class="add-comment" id="add-comment-form">
+                            <input type="text" id="comment-input" placeholder="Leave a quick note…" required>
+                            <button type="submit">Post</button>
+                        </form>
+                    </aside>
                 </div>
             </section>
         </div>
@@ -65,5 +97,7 @@
             <ul id="footer-nav"></ul>
         </nav>
     </footer>
+    <button id="backToTop" aria-label="Back to top">↑</button>
 </body>
 </html>
+
