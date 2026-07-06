@@ -1256,7 +1256,7 @@ body.dark-mode .landing-content {
 }
 
 /*
-   CHANGE: Work-lanyard visuals. Strap + clip + ring + photo card.
+   NEW: Work-lanyard visuals. Strap + clip + ring + photo card.
    The whole wrapper (#lanyard) is rotated by app.js on scroll. */
 .lanyard-wrapper {
     flex: 0 0 260px;
