@@ -4,11 +4,14 @@
 ## Project Title: 25/26 LZIFC005L: Computer Science Ecosystems
 Created by: Isabelle
 
-Description: This project aims to showcase students' understanding towards the use of coding languages and fundamentals like HTML, CSS, JavaScript, Git, GitHub and Bash by creating an interactive Curriculum-Vitae (CV) portfolio website. It contains the main page, where the members have briefly introduce themselves, provide contact information and includes hyperlinks that fetches user to respective pages of members' CV; subsequently, the user will be brought to a new page which contains  CV with detailed description of the respective member after tapping onto the hyperlink. (integrating AI into project)
+Description: This project is designed to operate an advanced version of the previous self-coded interactive personal portfolio webpage, that is now implemented with dynamic and immersive features with the aid of Artificial Intelligence (AI). The purpose of this project is to allow student to learn how to integrate and work with AI in webpage development, as it is gradually becoming a norm in the technology industry to efficiently produce codes or websites with the advantage of AI. Moreover, it is also to allow student to showcase their strength, experience, and facts about themselves in a personal portfolio page to prepare them for future job applications.
+
+This web application consists of two main parts; namely the cover page, and the Curriculum-Vitae (CV) page. Firstly, the cover page gives a brief information about the student and her acquired coding languages. Other than that, this page also has a card at the bottom which includes a hyperlink which links the user to the CV page as they click onto it. Additionally, it has header and footer that includes JavaScript function for user to access to each section of the page and the student’s contact. 
+
+Next, the CV page starts with the “about me’ section, followed by sections like skills, experience and contact of the student. The “about me” section demonstrated the student’s personal information, education level, fluency of spoken languages, and her passion towards technology. Not only that, the bottom of the “about me” section also contains hyperlinks that fetched user to the remaining sections of the page that elaborates on the student’s ability. There are also various elements in this page that aims to improve the user experience and attract user’s attention/gain fondness from user.  (For example, the carousel effect at the beginning of the page, the gradient change background, etc.) At the last section of this page, user will be able to comment down what they think about this webpage, which will be received by the student.
 
 
 **** Repository link / Link to clone: https://github.com/isabelleeee0/Isabelle-s-interactive-CV.git ****
-
 
 
 ## Instructions to run the project locally: 
@@ -20,17 +23,13 @@ Description: This project aims to showcase students' understanding towards the u
 6. After initiation, type "git clone" + (the url you copied from step 3)
 7. It should show you all the documents after this step. Please type 'cd <folder-name>' in your terminal. 
 8. Then, install the extension, 'Live Server' in VS code to run the program live.
-9. Please open the html file and right-click, choose the option: 'Run with LiveServer', it will direct you to the page of our project. 
+9. Please open the 'index.html' file and right-click, choose the option: 'Run with LiveServer', it will direct you to the page of our project. 
 
 
-Resources used:
-1. https://www.linkedin.com/learning/learning-the-javascript-language-22309208/objects-references-and-functions?u=83351972 
-2. https://www.linkedin.com/learning/html-essential-training-22425519/why-should-i-learn-html?resume=false&u=83351972 
-3. https://youtu.be/YyHBf6nwwKo?si=JN3xoyab2NOOAB1K 
-4. https://youtu.be/KD1Yo8a_Qis?si=AsvKSwdI6gnSPQQg 
-5. https://www.turing.com/blog/contemporary-css-designs-with-code-samples 
-6. https://youtu.be/CZTCciHE72I?si=yinNOWXrgdwMvtQ8 
-7. https://youtu.be/yefgBA1CecI?si=NTUvmyw648usWFB7 
-8. https://youtu.be/Slxdo0Dqxlk?si=9KeVsS6dUPwJu1WW 
+List of AI used:
+1. Copilot
+2. Claude
+3. Lovable
+4. Gemini
 
 Thank you! It is a pleasure to have you review my project.
