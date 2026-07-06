@@ -1,0 +1,7 @@
+cv.html: 1
+index.html: 4
+style.css: 44
+app.js: 9
+-------------------------------
+
+Total identified: 58
