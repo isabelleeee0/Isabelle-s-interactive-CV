@@ -1,3 +1,4 @@
+//NEW: connecting data from data.json file & transfering all content to js
 const DATA_URL = 'data.json';
 
 function setText(id, text) {
@@ -352,7 +353,7 @@ function setupBackToTop() {
   toggleVisibility();
 }
 
-/* CHANGE: Added entirely new function to calculate scroll position and swing the lanyard accordingly */
+/* NEW: Added entirely new function to calculate scroll position and swing the lanyard accordingly */
 function initLanyardSwing() {
   const lanyard = document.getElementById('lanyard');
   if (!lanyard || prefersReducedMotion) return;
@@ -376,7 +377,7 @@ function initImmersiveStatic() {
 function initImmersiveDynamic() {
   setupRevealGroups();
   setupTilt();
-  /* CHANGE: Initializing the new lanyard swing dynamic */
+  /* NEW: Initializing the new lanyard swing dynamic */
   initLanyardSwing(); 
 }
 
@@ -483,7 +484,7 @@ function initLandingIntro() {
     overlay.classList.add('landing-collapsing');
     if (vortex) vortex.setSpeed(9);
     
-    /* CHANGE: Extended timeout slightly to allow the smooth CSS opacity dissolve rather than the jarring whiteout */
+    /* NEW: Extended timeout slightly to allow the smooth CSS opacity dissolve rather than the jarring whiteout */
     setTimeout(() => {
       if (vortex) vortex.stop();
       overlay.remove();
@@ -558,7 +559,7 @@ async function getPageData() {
 
 
 
-/* CHANGE: New comments guestbook. Persists in localStorage so visitors can see each other's notes without a backend. */
+/* NEW: New comments guestbook. Persists in localStorage so visitors can see each other's notes without a backend. */
 function initCommentsGuestbook() {
   const list = document.getElementById('comments-list');
   const form = document.getElementById('add-comment-form');
@@ -617,9 +618,7 @@ function initCommentsGuestbook() {
 }
 
 
-
-/* CHANGE: Interactive constellation + magnetic hover for the index #about card.
-   Purely presentational: no content changes, just something to play with. */
+// NEW: Interactive constellation + magnetic hover for the index #about card. 
 function initAboutPlayground() {
   const section = document.getElementById('about');
   const canvas = document.getElementById('about-constellation');
@@ -650,89 +649,6 @@ function initAboutPlayground() {
     seed();
   }
 
-  function seed() {
-    const count = Math.max(24, Math.min(60, Math.floor((width * height) / 12000)));
-    dots = Array.from({ length: count }, () => ({
-      x: Math.random() * width,
-      y: Math.random() * height,
-      vx: (Math.random() - 0.5) * 0.25,
-      vy: (Math.random() - 0.5) * 0.25,
-      r: 1 + Math.random() * 1.6
-    }));
-  }
-
-  function step() {
-    ctx.clearRect(0, 0, width, height);
-    const base = accentColor();
-
-    dots.forEach((d) => {
-      d.x += d.vx;
-      d.y += d.vy;
-      if (d.x < 0 || d.x > width) d.vx *= -1;
-      if (d.y < 0 || d.y > height) d.vy *= -1;
-
-      // Attract toward cursor gently
-      if (mouse.active) {
-        const dx = mouse.x - d.x;
-        const dy = mouse.y - d.y;
-        const dist = Math.hypot(dx, dy);
-        if (dist < 160) {
-          d.x += (dx / dist) * 0.6;
-          d.y += (dy / dist) * 0.6;
-        }
-      }
-
-      ctx.beginPath();
-      ctx.arc(d.x, d.y, d.r, 0, Math.PI * 2);
-      ctx.fillStyle = base + '0.7)';
-      ctx.fill();
-    });
-
-    // Draw connecting lines
-    for (let i = 0; i < dots.length; i++) {
-      for (let j = i + 1; j < dots.length; j++) {
-        const a = dots[i], b = dots[j];
-        const dx = a.x - b.x, dy = a.y - b.y;
-        const dist = Math.hypot(dx, dy);
-        if (dist < 110) {
-          ctx.strokeStyle = base + (0.25 * (1 - dist / 110)).toFixed(3) + ')';
-          ctx.lineWidth = 1;
-          ctx.beginPath();
-          ctx.moveTo(a.x, a.y);
-          ctx.lineTo(b.x, b.y);
-          ctx.stroke();
-        }
-      }
-      // Line to cursor
-      if (mouse.active) {
-        const dx = dots[i].x - mouse.x;
-        const dy = dots[i].y - mouse.y;
-        const dist = Math.hypot(dx, dy);
-        if (dist < 140) {
-          ctx.strokeStyle = base + (0.35 * (1 - dist / 140)).toFixed(3) + ')';
-          ctx.beginPath();
-          ctx.moveTo(dots[i].x, dots[i].y);
-          ctx.lineTo(mouse.x, mouse.y);
-          ctx.stroke();
-        }
-      }
-    }
-
-    // Sparks
-    sparks = sparks.filter((s) => s.life > 0);
-    sparks.forEach((s) => {
-      s.x += s.vx;
-      s.y += s.vy;
-      s.vy += 0.04;
-      s.life -= 1;
-      ctx.beginPath();
-      ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
-      ctx.fillStyle = base + (s.life / s.max).toFixed(3) + ')';
-      ctx.fill();
-    });
-
-    requestAnimationFrame(step);
-  }
 
   function pointerMove(e) {
     const rect = section.getBoundingClientRect();
@@ -758,7 +674,7 @@ function initAboutPlayground() {
     }
   }
 
-  // Magnetic paragraphs — text follows cursor slightly
+  // NEW: Magnetic paragraphs — text follows cursor slightly
   const magneticHost = section.querySelector('[data-magnetic]');
   if (magneticHost && !reduced) {
     section.addEventListener('mousemove', (e) => {
@@ -808,9 +724,9 @@ async function init() {
   const data = await getPageData();
   renderPageData(page, data);
   initImmersiveDynamic();
-  /* CHANGE: Wire up the new comments guestbook after render. */
+  /* NEW: Wire up the new comments guestbook after render. */
   initCommentsGuestbook();
-  /* CHANGE: Wire up the interactive About playground on index.html. */
+  /* NEW: Wire up the interactive About playground on index.html. */
   initAboutPlayground();
 }
 
